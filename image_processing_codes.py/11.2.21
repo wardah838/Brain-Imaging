@@ -1,0 +1,19 @@
+### image processing python codes
+
+###import blocks
+
+import matplotlib.pyplot as plt
+from scipy import misc, ndimage
+
+#create face array
+face = misc.face()
+
+#use different Gaussian kernels for smoothing
+blurred_face=ndimage.gaussian_filter(face, sigma=3)
+very_blurred_face=ndimage.gaussian_filter(face, sigma=15)
+
+#draw the image
+plt.imshow(very_blurred)
+
+#show the image
+plt.show
